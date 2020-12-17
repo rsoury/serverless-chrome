@@ -1,6 +1,6 @@
 {
   "name": "serverless-chrome",
-  "version": "1.0.0-62",
+  "version": "1.0.1",
   "description": "Run headless Chrome, serverless-ly",
   "author": "Marco Lüthy <marco.luethy@gmail.com (https://github.com/adieuadieu)",
   "maintainers": [],
@@ -19,7 +19,7 @@
     "upgrade-dependencies": "yarn upgrade-interactive --latest --exact",
     "precommit": "lint-staged",
     "prettier": "prettier-eslint --no-semi --single-quote --trailing-comma es5 --write",
-    "release": "scripts/release.sh",
+    "release": "dotenv-cli -- scripts/release.sh",
     "postversion": "scripts/sync-package-versions.sh"
   },
   "repository": {
@@ -53,6 +53,7 @@
     "babel-runtime": "6.26.0",
     "codacy-coverage": "3.0.0",
     "coveralls": "3.0.1",
+    "dotenv-cli": "^4.0.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-ava": "4.5.1",
